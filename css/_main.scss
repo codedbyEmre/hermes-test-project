@@ -39,7 +39,7 @@ main {
         .phone-container {
           p {
             font-size: 13px;
-            font-family: 'Nunito', sans-serif;
+            font-family: "Nunito", sans-serif;
             font-weight: 600;
             color: #f6f8fb;
             text-transform: capitalize;
@@ -102,7 +102,7 @@ main {
         .user-form {
           position: relative;
           margin-right: 0.5rem;
-          input[type='text'] {
+          input[type="text"] {
             width: 275px;
             height: 48px;
             border-radius: 10px;
@@ -136,7 +136,7 @@ main {
         }
         .input-form {
           position: relative;
-          input[type='text'] {
+          input[type="text"] {
             height: 48px;
             width: 368px;
             border-radius: 10px;
@@ -174,7 +174,7 @@ main {
           .user-form {
             margin-right: 0;
             margin-bottom: 1rem;
-            input[type='text'] {
+            input[type="text"] {
               width: 275px;
               height: 32px;
               &::placeholder {
@@ -190,7 +190,7 @@ main {
             }
           }
           .input-form {
-            input[type='text'] {
+            input[type="text"] {
               height: 32px;
               width: 275px;
               &::placeholder {
@@ -208,7 +208,7 @@ main {
         }
         @media (max-width: 500px) {
           .user-form {
-            input[type='text'] {
+            input[type="text"] {
               width: 100%;
               &::placeholder {
                 font-size: 0.7rem;
@@ -223,7 +223,7 @@ main {
             }
           }
           .input-form {
-            input[type='text'] {
+            input[type="text"] {
               width: 100%;
               &::placeholder {
                 font-size: 0.7rem;
@@ -354,7 +354,7 @@ main {
                     width: 70px;
                     padding: 0.5rem;
                     border-radius: 5px;
-                    font-family: 'Nunito', sans-serif;
+                    font-family: "Nunito", sans-serif;
                     font-weight: 600;
                     font-size: 12px;
                   }
