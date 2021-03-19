@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style scoped>
+      @import "./css/style.css";
+    </style>
+    <title>Kayıt Detayları</title>
+</head>
+<body>
+    
+  <div id="app">
+
+    <header>
+        <div class="container">
+            <img src="./assets/logo.png" alt="logo" class="logo">
+            <div class="header-right">
+                <p>İzin Listesi</p>
+                <div class="avatar-container">
+                    <div class="avatar"></div>
+                    <img src="./assets/arrow_header drop_down.png" alt="arrow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="main-title">
+                Kayıt detayları
+                <img src="./assets/info.png" alt="info" class="info">
+            </h1>
+            <div class="dashboard-container">
+                <div class="dashboard-header">
+                    <div class="phone-container">
+                        <p>Alıcı telefon numarası</p>
+                        <h1>324324324</h1>
+                    </div>
+                    <div class="record-state-container">
+                        <img class="state-one" src="./assets/black-exclamation.png" alt="state">
+                        <img class="state-two" src="./assets/red-i.png" alt="state">
+                        <img class="state-three" src="./assets/red-dash.png" alt="state">
+                    </div>
+                </div>
+                <div class="user-container">
+                    <form class="user-form">
+                        <input type="text" :placeholder="[[placeholderName]]">
+                        <div class="username">Alıcı Adı / Soyadı</div>
+                        <img src="./assets/pen.png" alt="pen" class="pen">
+                    </form>
+                    <form class="input-form">
+                        <input type="text" :placeholder="[[locationName]]">
+                        <div class="inputname">ÖTA Input 01</div>
+                        <img src="./assets/arrow_header drop_down.png" alt="arrow" class="arrow-down">
+                    </form>
+                </div>
+                <div class="permission-container">
+                    <div class="permission-header">
+                        <h1 class="permission-title">
+                            İzin Bilgileri
+                            <img src="./assets/info.png" alt="info" class="info">
+                        </h1>
+                        <div class="add-permission">
+                            <button class="add-btn">
+                                + İzin Ekle
+                            </button>
+                            <button class="table-icon">
+                                <img src="./assets/table_chart.png" alt="table-chart">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="permission-main">
+                        <table>
+                            <tr>
+                                <th>
+                                    <input type="checkbox">
+                                </th>
+                                <th>Ad Soyad</th>
+                                <th>Form</th>
+                                <th>İzin Durumu</th>
+                                <th>Durumu</th>
+                                <th>Doğum Yeri</th>
+                                <th>İzin Tarihi</th>
+                                <th>Ret Tarihi</th>
+                                <th>Cinsiyet</th>
+                                <th>İzin Paylaşılan Bayi</th>
+                                <th></th>
+                            </tr>
+                            <tr v-for = "item in gender">
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <img src="./assets/blue-circle.png" alt="">
+                                    {{item.name}}
+                                </td>
+                                <td>{{item.species}}</td>
+                                <td>
+                                    <p class="success">
+                                    ONAY
+                                    </p>
+                                </td>
+                                <td>{{item.status}}</td>
+                                <td>{{item.origin.name}}</td>
+                                <td>{{item.created}}</td>
+                                <td>-</td>
+                                <td>{{item.gender}}</td>
+                                <td>3501, 4502, 5205...</td>
+                                <td>
+                                    <img style="width: 50px;" v-bind:src="item.image" alt="">
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>                                  <img src="./assets/Ellipse.png" alt="">
+                                    Minimum CRM</td>
+                                <td>Arama</td>
+                                                                <td>
+                                    <p class="success">
+                                        ONAY
+                                    </p>
+                                </td>
+                                <td>Bireysel</td>
+                                <td>E-Posta</td>
+                                <td>21.10.2020</td>
+                                <td>-</td>
+                                <td>3501</td>
+                                <td>3501, 4502, 5205...</td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>                                  <img src="./assets/blue-circle.png" alt="">
+                                    Minimum CRM</td>
+                                <td>Arama</td>
+                                <td>
+                                    <p class="fail">
+                                        RET
+                                    </p>
+                                </td>
+                                <td>Bireysel</td>
+                                <td>E-Posta</td>
+                                <td>21.10.2020</td>
+                                <td>-</td>
+                                <td>3501</td>
+                                <td>3501, 4502, 5205...</td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <img src="./assets/red-times.png" alt="">
+                                    Minimum CRM</td>
+                                <td>Arama</td>
+                                <td>
+                                    <p class="success">ONAY</p>
+                                </td>
+                                <td>Bireysel</td>
+                                <td>E-Posta</td>
+                                <td>21.10.2020</td>
+                                <td>-</td>
+                                <td>3501</td>
+                                <td>3501, 4502, 5205...</td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>                                  <img src="./assets/blue-circle.png" alt="">
+                                    Minimum CRM</td>
+                                <td>Arama</td>
+                                <td>
+                                    <p class="fail">
+                                        RET
+                                    </p>
+                                </td>
+                                <td>Bireysel</td>
+                                <td>E-Posta</td>
+                                <td>21.10.2020</td>
+                                <td>-</td>
+                                <td>3501</td>
+                                <td>3501, 4502, 5205...</td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <img src="./assets/red-circle.png" alt="">
+                                    Minimum CRM</td>
+                                <td>Arama</td>
+                                                                <td>
+                                    <p class="success">
+                                        ONAY
+                                    </p>
+                                </td>
+                                <td>Bireysel</td>
+                                <td>E-Posta</td>
+                                <td>21.10.2020</td>
+                                <td>-</td>
+                                <td>3501</td>
+                                <td>3501, 4502, 5205...</td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <img src="./assets/Ellipse.png" alt="">
+                                    Minimum CRM
+                                </td>
+                                <td>Arama</td>
+                                                                <td>
+                                    <p class="fail">
+                                        RET
+                                    </p>
+                                </td>
+                                <td>Bireysel</td>
+                                <td>E-Posta</td>
+                                <td>21.10.2020</td>
+                                <td>-</td>
+                                <td>3501</td>
+                                <td>3501, 4502, 5205...</td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>                                  <img src="./assets/blue-circle.png" alt="">
+                                    Minimum CRM</td>
+                                <td>Arama</td>
+                                                                <td>
+                                    <p class="success">
+                                        ONAY
+                                    </p>
+                                </td>
+                                <td>Bireysel</td>
+                                <td>E-Posta</td>
+                                <td>21.10.2020</td>
+                                <td>-</td>
+                                <td>3501</td>
+                                <td>3501, 4502, 5205...</td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>                                  <img src="./assets/blue-circle.png" alt="">
+                                    Minimum CRM</td>
+                                <td>Arama</td>
+                                                                <td>
+                                    <p class="success">
+                                        ONAY
+                                    </p>
+                                </td>
+                                <td>Bireysel</td>
+                                <td>E-Posta</td>
+                                <td>21.10.2020</td>
+                                <td>-</td>
+                                <td>3501</td>
+                                <td>3501, 4502, 5205...</td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>                                  <img src="./assets/blue-circle.png" alt="">
+                                    Minimum CRM</td>
+                                <td>Arama</td>
+                                                                <td>
+                                    <p class="success">
+                                        ONAY
+                                    </p>
+                                </td>
+                                <td>Bireysel</td>
+                                <td>E-Posta</td>
+                                <td>21.10.2020</td>
+                                <td>-</td>
+                                <td>3501</td>
+                                <td>3501, 4502, 5205...</td>
+                                <td></td>
+                                </tr> -->
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>
+                    <img src="./assets/Ellipse.png" alt="ellipse">
+                    Kaydın <span>e-devlet</span>’e  aktarılması gerekli
+                </p>
+                <p>
+                    <img src="./assets/blue-circle.png" alt="blue-circle">
+                    Kayıt <span>e-devlet</span>’e  aktarıldı
+                </p>
+                <p>
+                    <img src="./assets/red-circle.png" alt="red-circle">
+                    Kayıtta eksik bilgi var
+                </p>
+            </footer>
+        </div>
+    </main>
+
+  </div>
+
+
+  
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
