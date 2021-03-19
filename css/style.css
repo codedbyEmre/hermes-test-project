@@ -7,7 +7,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 header .container, main .container {
@@ -64,7 +64,7 @@ header .container .header-right p {
 header .container .header-right p::after {
   position: absolute;
   bottom: -5px;
-  content: '';
+  content: "";
   background-color: #0b5fff;
   width: 83px;
   height: 4px;
@@ -162,7 +162,7 @@ main .container .dashboard-container .dashboard-header {
 
 main .container .dashboard-container .dashboard-header .phone-container p {
   font-size: 13px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 600;
   color: #f6f8fb;
   text-transform: capitalize;
@@ -255,7 +255,7 @@ main .container .dashboard-container .user-container .user-form {
   margin-right: 0.5rem;
 }
 
-main .container .dashboard-container .user-container .user-form input[type='text'] {
+main .container .dashboard-container .user-container .user-form input[type="text"] {
   width: 275px;
   height: 48px;
   border-radius: 10px;
@@ -264,25 +264,25 @@ main .container .dashboard-container .user-container .user-form input[type='text
   outline: none;
 }
 
-main .container .dashboard-container .user-container .user-form input[type='text']::-webkit-input-placeholder {
+main .container .dashboard-container .user-container .user-form input[type="text"]::-webkit-input-placeholder {
   font-size: 1rem;
   color: #1a1a1a;
   font-weight: 600;
 }
 
-main .container .dashboard-container .user-container .user-form input[type='text']:-ms-input-placeholder {
+main .container .dashboard-container .user-container .user-form input[type="text"]:-ms-input-placeholder {
   font-size: 1rem;
   color: #1a1a1a;
   font-weight: 600;
 }
 
-main .container .dashboard-container .user-container .user-form input[type='text']::-ms-input-placeholder {
+main .container .dashboard-container .user-container .user-form input[type="text"]::-ms-input-placeholder {
   font-size: 1rem;
   color: #1a1a1a;
   font-weight: 600;
 }
 
-main .container .dashboard-container .user-container .user-form input[type='text']::placeholder {
+main .container .dashboard-container .user-container .user-form input[type="text"]::placeholder {
   font-size: 1rem;
   color: #1a1a1a;
   font-weight: 600;
@@ -313,7 +313,7 @@ main .container .dashboard-container .user-container .input-form {
   position: relative;
 }
 
-main .container .dashboard-container .user-container .input-form input[type='text'] {
+main .container .dashboard-container .user-container .input-form input[type="text"] {
   height: 48px;
   width: 368px;
   border-radius: 10px;
@@ -322,25 +322,25 @@ main .container .dashboard-container .user-container .input-form input[type='tex
   outline: none;
 }
 
-main .container .dashboard-container .user-container .input-form input[type='text']::-webkit-input-placeholder {
+main .container .dashboard-container .user-container .input-form input[type="text"]::-webkit-input-placeholder {
   font-size: 1rem;
   color: #1a1a1a;
   font-weight: 600;
 }
 
-main .container .dashboard-container .user-container .input-form input[type='text']:-ms-input-placeholder {
+main .container .dashboard-container .user-container .input-form input[type="text"]:-ms-input-placeholder {
   font-size: 1rem;
   color: #1a1a1a;
   font-weight: 600;
 }
 
-main .container .dashboard-container .user-container .input-form input[type='text']::-ms-input-placeholder {
+main .container .dashboard-container .user-container .input-form input[type="text"]::-ms-input-placeholder {
   font-size: 1rem;
   color: #1a1a1a;
   font-weight: 600;
 }
 
-main .container .dashboard-container .user-container .input-form input[type='text']::placeholder {
+main .container .dashboard-container .user-container .input-form input[type="text"]::placeholder {
   font-size: 1rem;
   color: #1a1a1a;
   font-weight: 600;
@@ -379,20 +379,20 @@ main .container .dashboard-container .user-container .input-form .arrow-down {
     margin-right: 0;
     margin-bottom: 1rem;
   }
-  main .container .dashboard-container .user-container .user-form input[type='text'] {
+  main .container .dashboard-container .user-container .user-form input[type="text"] {
     width: 275px;
     height: 32px;
   }
-  main .container .dashboard-container .user-container .user-form input[type='text']::-webkit-input-placeholder {
+  main .container .dashboard-container .user-container .user-form input[type="text"]::-webkit-input-placeholder {
     font-size: 0.8rem;
   }
-  main .container .dashboard-container .user-container .user-form input[type='text']:-ms-input-placeholder {
+  main .container .dashboard-container .user-container .user-form input[type="text"]:-ms-input-placeholder {
     font-size: 0.8rem;
   }
-  main .container .dashboard-container .user-container .user-form input[type='text']::-ms-input-placeholder {
+  main .container .dashboard-container .user-container .user-form input[type="text"]::-ms-input-placeholder {
     font-size: 0.8rem;
   }
-  main .container .dashboard-container .user-container .user-form input[type='text']::placeholder {
+  main .container .dashboard-container .user-container .user-form input[type="text"]::placeholder {
     font-size: 0.8rem;
   }
   main .container .dashboard-container .user-container .user-form .username {
@@ -402,20 +402,20 @@ main .container .dashboard-container .user-container .input-form .arrow-down {
     width: 15px;
     height: 15px;
   }
-  main .container .dashboard-container .user-container .input-form input[type='text'] {
+  main .container .dashboard-container .user-container .input-form input[type="text"] {
     height: 32px;
     width: 275px;
   }
-  main .container .dashboard-container .user-container .input-form input[type='text']::-webkit-input-placeholder {
+  main .container .dashboard-container .user-container .input-form input[type="text"]::-webkit-input-placeholder {
     font-size: 0.8rem;
   }
-  main .container .dashboard-container .user-container .input-form input[type='text']:-ms-input-placeholder {
+  main .container .dashboard-container .user-container .input-form input[type="text"]:-ms-input-placeholder {
     font-size: 0.8rem;
   }
-  main .container .dashboard-container .user-container .input-form input[type='text']::-ms-input-placeholder {
+  main .container .dashboard-container .user-container .input-form input[type="text"]::-ms-input-placeholder {
     font-size: 0.8rem;
   }
-  main .container .dashboard-container .user-container .input-form input[type='text']::placeholder {
+  main .container .dashboard-container .user-container .input-form input[type="text"]::placeholder {
     font-size: 0.8rem;
   }
   main .container .dashboard-container .user-container .input-form .inputname {
@@ -428,19 +428,19 @@ main .container .dashboard-container .user-container .input-form .arrow-down {
 }
 
 @media (max-width: 500px) {
-  main .container .dashboard-container .user-container .user-form input[type='text'] {
+  main .container .dashboard-container .user-container .user-form input[type="text"] {
     width: 100%;
   }
-  main .container .dashboard-container .user-container .user-form input[type='text']::-webkit-input-placeholder {
+  main .container .dashboard-container .user-container .user-form input[type="text"]::-webkit-input-placeholder {
     font-size: 0.7rem;
   }
-  main .container .dashboard-container .user-container .user-form input[type='text']:-ms-input-placeholder {
+  main .container .dashboard-container .user-container .user-form input[type="text"]:-ms-input-placeholder {
     font-size: 0.7rem;
   }
-  main .container .dashboard-container .user-container .user-form input[type='text']::-ms-input-placeholder {
+  main .container .dashboard-container .user-container .user-form input[type="text"]::-ms-input-placeholder {
     font-size: 0.7rem;
   }
-  main .container .dashboard-container .user-container .user-form input[type='text']::placeholder {
+  main .container .dashboard-container .user-container .user-form input[type="text"]::placeholder {
     font-size: 0.7rem;
   }
   main .container .dashboard-container .user-container .user-form .username {
@@ -450,19 +450,19 @@ main .container .dashboard-container .user-container .input-form .arrow-down {
     width: 12px;
     height: 12px;
   }
-  main .container .dashboard-container .user-container .input-form input[type='text'] {
+  main .container .dashboard-container .user-container .input-form input[type="text"] {
     width: 100%;
   }
-  main .container .dashboard-container .user-container .input-form input[type='text']::-webkit-input-placeholder {
+  main .container .dashboard-container .user-container .input-form input[type="text"]::-webkit-input-placeholder {
     font-size: 0.7rem;
   }
-  main .container .dashboard-container .user-container .input-form input[type='text']:-ms-input-placeholder {
+  main .container .dashboard-container .user-container .input-form input[type="text"]:-ms-input-placeholder {
     font-size: 0.7rem;
   }
-  main .container .dashboard-container .user-container .input-form input[type='text']::-ms-input-placeholder {
+  main .container .dashboard-container .user-container .input-form input[type="text"]::-ms-input-placeholder {
     font-size: 0.7rem;
   }
-  main .container .dashboard-container .user-container .input-form input[type='text']::placeholder {
+  main .container .dashboard-container .user-container .input-form input[type="text"]::placeholder {
     font-size: 0.7rem;
   }
   main .container .dashboard-container .user-container .input-form .inputname {
@@ -629,7 +629,7 @@ main .container .dashboard-container .permission-container .permission-main tabl
   width: 70px;
   padding: 0.5rem;
   border-radius: 5px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 12px;
 }
